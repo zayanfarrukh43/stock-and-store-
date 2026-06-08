@@ -2,7 +2,6 @@ import {
   Shirt,
   ShoppingBag,
   Home,
-  Sparkles,
   Watch,
   ArrowRight,
 } from "lucide-react";
@@ -22,11 +21,6 @@ const categories = [
     icon: Home,
     title: "Home essentials",
     desc: "Elevate your space",
-  },
-  {
-    icon: Sparkles,
-    title: "Lifestyle",
-    desc: "Live beautifully",
   },
   {
     icon: Watch,
@@ -52,7 +46,7 @@ export default function CategorySection() {
         </div>
 
         {/* Cards */}
-        <div className="mt-16 lg:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 lg:gap-8">
+        <div className="mt-16 lg:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {categories.map((item, index) => {
             const Icon = item.icon;
 

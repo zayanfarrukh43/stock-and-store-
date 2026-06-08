@@ -1,5 +1,5 @@
 import { Mail, MapPin, } from "lucide-react";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram ,FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -70,6 +70,13 @@ export default function Footer() {
               >
                 <FaFacebookF size={18} />
               </a>
+
+              <a
+                href="#"
+                className="w-12 h-12 rounded-full border border-zinc-700 flex items-center justify-center hover:border-[#ff0080] hover:text-[#ff0080] transition"
+              >
+                <FaTiktok size={20} />
+              </a>
             </div>
           </div>
 
@@ -131,11 +138,11 @@ export default function Footer() {
                 </a>
               </li>
 
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-white">
                   Careers
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
