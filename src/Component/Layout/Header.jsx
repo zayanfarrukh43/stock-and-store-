@@ -10,7 +10,13 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const navItems = ["HOME", "SHOP", "OUR STORES", "ABOUT", "CONTACT"];
+const navItems = [
+  { name: "HOME", path: "/" },
+  { name: "SHOP", path: "/shop" },
+  { name: "OUR STORES", path: "/stores" },
+  { name: "ABOUT", path: "/aboutus" },
+  { name: "CONTACT", path: "/contact" },
+];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,20 +24,16 @@ export default function Navbar() {
   return (
     <header className="bg-black text-white">
       <div className="h-[90px] px-5 lg:px-12 xl:px-20 flex items-center justify-between">
+        
         {/* Logo */}
         <div className="flex items-center gap-3">
           <div className="w-[3px] h-[55px] bg-[#00D26A]" />
 
           <div>
             <h1 className="font-black text-[20px] sm:text-[24px] leading-none">
-              <span className="text-[#ff0080] text-[34px] sm:text-[40px]">
-                S
-              </span>
+              <span className="text-[#ff0080] text-[34px] sm:text-[40px]">S</span>
               TOCK &
-              <span className="text-[#ff0080] text-[34px] sm:text-[40px]">
-                {" "}
-                S
-              </span>
+              <span className="text-[#ff0080] text-[34px] sm:text-[40px]"> S</span>
               TORE
             </h1>
 
@@ -46,14 +48,13 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <nav className="hidden lg:flex items-center gap-12">
           {navItems.map((item) => (
-            <a
-              key={item}
-              
-              href="/"
+            <Link
+              key={item.name}
+              to={item.path}
               className="text-[14px] font-extrabold tracking-wide hover:text-[#ff0080] transition"
             >
-              {item}
-            </a>
+              {item.name}
+            </Link>
           ))}
         </nav>
 
@@ -87,13 +88,14 @@ export default function Navbar() {
       >
         <nav className="flex flex-col bg-[#111] border-t border-zinc-800">
           {navItems.map((item) => (
-            <a
-              key={item}
-              href="/"
+            <Link
+              key={item.name}
+              to={item.path}
+              onClick={() => setIsOpen(false)}
               className="px-5 py-4 font-bold border-b border-zinc-800 hover:bg-zinc-900"
             >
-              {item}
-            </a>
+              {item.name}
+            </Link>
           ))}
 
           <div className="flex items-center gap-5 px-5 py-4">

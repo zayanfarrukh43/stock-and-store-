@@ -3,21 +3,22 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./component/Layout/Header";
 import Footer from "./component/Layout/Footer";
 import Home from "./Pages/Home";
-import Aboutus from "./Pages/Aboutus";
+import AboutUs from "./Pages/AboutUs";
+
+
 const App = () => {
   return (
-    <div>
+    <BrowserRouter>
       <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/aboutus" element={<Aboutus />} />
-        </Routes>
-      </BrowserRouter>       
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+      </Routes>
+
       <Footer />
+    </BrowserRouter>
+  );
+};
 
-    </div>
-  )
-}
-
-export default App
+export default App;
