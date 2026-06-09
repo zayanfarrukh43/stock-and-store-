@@ -51,7 +51,7 @@ export default function HeroSection() {
           <p className="mt-5 sm:mt-8 text-zinc-200 text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-2xl mx-auto lg:mx-0">
             Experience premium quality and timeless style.
             Discover our curated collection of fashion,
-            footwear, home essentials, and lifestyle products.
+            footwear, home essentials
           </p>
 
           {/* Button */}

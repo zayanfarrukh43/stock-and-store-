@@ -8,6 +8,7 @@ import {
   Menu,
   X,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const navItems = ["HOME", "SHOP", "OUR STORES", "ABOUT", "CONTACT"];
 
@@ -47,6 +48,7 @@ export default function Navbar() {
           {navItems.map((item) => (
             <a
               key={item}
+              
               href="/"
               className="text-[14px] font-extrabold tracking-wide hover:text-[#ff0080] transition"
             >

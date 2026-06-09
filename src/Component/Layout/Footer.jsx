@@ -48,9 +48,9 @@ export default function Footer() {
                   size={20}
                 />
                 <span className="text-zinc-300">
-                  Via Rizzoli 12,
-                  <br />
-                  40125 Bologna, Italy
+                 Bologna , Via Bruno Tosarelli 308,
+                
+                  40055 Villanova BO
                 </span>
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="border-t border-zinc-800 mt-14 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-zinc-400 text-center md:text-left">
-            © 2025 Stock & Store. All rights reserved.
+            © 2009 Stock & Store. All rights reserved.
           </p>
 
           <div className="flex gap-6 text-zinc-300">
