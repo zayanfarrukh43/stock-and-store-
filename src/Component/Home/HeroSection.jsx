@@ -21,24 +21,24 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 flex items-center min-h-[90vh] lg:min-h-screen">
         <div className="max-w-3xl text-center lg:text-left">
-          
+
           {/* Decorative White Line */}
           <div className="w-2 h-12 sm:h-16 md:h-20 bg-white rounded-full mb-6 sm:mb-8 mx-auto lg:mx-0"></div>
 
           {/* Heading */}
           <h1 className="text-white font-black uppercase leading-none tracking-tight">
-            <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[110px]">
+            <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[90px]">
               STOCK&
             </span>
 
-            <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[110px]">
+            <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[90px]">
               STORE
             </span>
           </h1>
 
           {/* Subtitle */}
           <h2
-            className="mt-4 sm:mt-6 text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase text-pink-500"
+            className="mt-4 sm:mt-6 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-extrabold uppercase text-pink-500"
             style={{
               textShadow:
                 "0 0 10px rgba(255,0,128,.8), 0 0 30px rgba(255,0,128,.5)",
@@ -48,7 +48,7 @@ export default function HeroSection() {
           </h2>
 
           {/* Description */}
-          <p className="mt-5 sm:mt-8 text-zinc-200 text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-2xl mx-auto lg:mx-0">
+          <p className="mt-5 sm:mt-8 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 text-zinc-200">
             Experience premium quality and timeless style.
             Discover our curated collection of fashion,
             footwear, home essentials
@@ -92,6 +92,7 @@ export default function HeroSection() {
             Explore Collection
             <ArrowRight size={20} />
           </button>
+
         </div>
       </div>
     </section>
