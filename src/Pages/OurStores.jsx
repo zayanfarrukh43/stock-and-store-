@@ -73,7 +73,7 @@ export default function OurStores() {
       hours: "Mon - Sat: 8:30 AM – 8:00 PM",
     },
     {
-      name: "Stock & Store Reggio ",
+      name: "Stock & Store  ",
       address: "Via Leo Gramellini, 14, 47122 Forlì FC",
       hours: "Mon - Sat: 8:30 AM – 8:00 PM",
     },
